@@ -1,0 +1,40 @@
+$("#first").css("color","red");
+$("#fourth").css("color","blue");
+				
+var $third = $("#third");
+				
+$third.css("color", "green");
+$third.css("font-weight", "bold");
+				
+$("#third").css({					"color":"#0ff",					"fontWeight":"bold"
+});
+				
+// 모든 JQuery API 함수들은 jQuery Object를 다시 반환한다.
+console.log($("#third").css("color", "#f00"));
+				
+// 따라서 함수 체인을 사용할 수 있다.
+$("#second").
+css("color", "#f0f").
+css("fontWeight", "bold").
+html("<strong>hello!</strong>");
+
+/*
+$(function(){
+	$("#first, #third").css("color","red");
+	$("#second, #fourth").css({
+		color: "blue",
+		fontSize: "2em",
+		fontWeight: "bold"
+	});
+});
+*/
+<body>
+	
+<ul>
+<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li id="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li id="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+</ul>
+
+</body>

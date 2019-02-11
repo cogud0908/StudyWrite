@@ -1,0 +1,31 @@
+$(function()
+{
+	$("li[id]").css("color","red");
+	$("li[class]").css("color","blue");
+			
+	$('li[class="second"]').css("fontStyle","italic");
+});
+
+// css2
+$("li:first-child").css("color","red");
+$("li:last-child").css("color","blue");
+			
+// ccs3 (index는 1부터 시작)
+$("li:nth-child(2)").css("color","green");
+$("li:nth-child(3)").css("color","pink");
+
+$("[class]").css("color","blue");
+$("[title='second']").css("color","red");
+
+$("li[class!='blue']").css("color","red");
+
+$("li:first").css("color","red");
+$("li:last").css("color","blue");
+
+// 짝수, 홀수
+$("li:odd").css("color","red");
+$("li:even").css("color","blue");
+
+// 포함
+$("li:contains('샘플')").css("color","red");
+$("li:has(strong)").css("color","red");

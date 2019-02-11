@@ -1,0 +1,21 @@
+var $li = $("li");
+$li.css("color", "#f00");
+				
+// jquery object?
+console.log($li.length);
+console.log($li[0] + ":" +typeof $li[0]);
+console.log($li.get(0) + ":" +typeof $li.get(0));
+
+//error
+//$li[0].css("color","#f00");
+
+$li[0].style.color = "#00f";
+$li.get(3).style.color = "#00f";
+
+
+$($li[1]).css("color", "#ff0");
+$($li.get(2)).css("color","#0ff");
+
+$(function(){
+$("li *").css("color","red");
+});

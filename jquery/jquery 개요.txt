@@ -1,0 +1,21 @@
+jquery
+
+prototype.js -> jquery
+
+            - vue.js       ↘
+vanillajs - react.js     → spring (mvc framework) 
+            - angular.js  ↗
+
+     ↘    - jquery → servlet(mvc)
+
+
+Jquery Object
+   □□□□□
+
+- HTMLElement를 배열로 가지고 있다.
+
+css("color", "#fff")
+html("<strong>___</strong>")
+click(function (){})
+
+$document.ready() <---- api 부르는것

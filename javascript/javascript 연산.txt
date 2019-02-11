@@ -1,0 +1,78 @@
+<script>
+
+var myVar;
+var myVar2 = null;
+
+console.log(myVar + ":" + myVar2);
+console.log(myVar == myVar2);
+console.log(myVar === myVar2);
+
+console.log("2" == 2);
+console.log(parseInt("2") == 2);
+console.log("2" === 2);
+console.log(parseInt("2") === 2);
+
+// == (!=, equality, 값의 등치성, 자동 형변환)
+console.log("2" == 2);
+console.log(true == 1);
+console.log('abc' == new String('abc'));
+console.log(0 == false);
+
+//=== (!==, identity, 객체의 동일성, 형변환)
+console.log("2" === 2);
+console.log(true === 1);
+console.log('abc' === new String('abc'));
+console.log(0 === false);
+
+// 추천 :
+// == 연산자를 사용할 때는 엄격하게 형변환을 해서 두 피연산자의 타입을 맞춘다.
+console.log(parseInt("5") == 5);
+
+// 변수 범위
+// 1. var 사용 유무
+// 2. var를 사용했을때 변수의 범위는 함수
+i = 5;
+f = function()
+{
+	// 함수 안에서 var를 사용해서 변수를 정의하면 지역변수가 된다.
+	var i = 20;
+	i = i - 10;
+	console.log(i);
+}
+f();
+console.log(i);
+// 결론은 무조건 var를 사용해서 변수를 정의한다.
+
+// statement 구분
+// statement : JS engine이 읽어서 실행하는 단위
+// \n, ;(세미콜론) 단위로 읽어서 실행
+var str = "hello world"; console.log(str);
+
+// 동적 타이핑(Dynamical Typing)
+// 실행중 변수의 타입을 결정한다.
+var a = 10;
+console.log(a + ":" + typeof a);
+
+a = "hello world";
+console.log(a + ":" + typeof a);
+
+// 추천:엄격하게 하나의 변수 타입은 변경하지 않도록 코딩
+
+// 전역(global) 객체 window
+console.log(window.a);
+
+var o = {};
+o.name = "둘리";
+o.age = new Number(20);
+o.age.man = 19;
+
+console.log(window.o);
+console.log(window.o.name);
+console.log(window.o.age);
+console.log(window.o.age.man);
+console.log(o);
+console.log(o.name);
+console.log(o.age);
+console.log(o.age.man);
+
+</script>

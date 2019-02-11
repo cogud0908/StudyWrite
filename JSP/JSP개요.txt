@@ -1,0 +1,46 @@
+Was는 대표적으로 tomcat
+
+application의 구조를 보면 특정 위치에 사이트를 만들면
+
+mysite (web-contents 디렉토리)
+          (webapp)
+- hello.jsp
+- images
+   - logo.gif
+   - ...jsp
+- js
+- css
+- WEB-INF(중요)
+   - web.xml
+   - classes
+      - *.class
+   - lib
+      - *.jar
+
+mysite.war 압축시켜 was에 전달
+
+was는 읽을때 mysite/ <-- 뒤에 부분을 찾아서 실행
+was는 오직 servlet만 읽는다. (servlet 바라기)
+
+Was안에 defaultServlet이 존재
+/mysite/image/logo.gif 만약 이 경로에 따른 매핑을 찾지 못할경우이미지 파일 같은 정적자원들은 defalutServlet이 찾는다. 이때 찾지 못하면 404 에러를 전달
+
+웹 서버(Web Server) : 정적인 페이지 처리
+웹 어플리케이션서버(WAS) : 동적인 페이지 처리
+
+MainMall    
+HelloWorld => java에서 실행
+
+톰캣을 쓰면 런타임 환경(Runtime Env)이 바뀐다.
+tomcat 한테 제어권이 뺏긴다. (IOC)
+
+bean 규약
+html에서 jsp태그로 객체를 받고 싶을때 쓰는 객체
+<jsp:useBeans = "o.o.o.xxDao">
+getter, setter 까지 내부 구현을 해주는 객체를 태그로 만들었다.
+요즘은 tag-library가 나와서 잘 안쓴다.
+
+톰캣을 실행시키면
+dynamic web project안에
+webContent 안을 이클립스가 압축을 한다. ->.war
+그리고 톰캣안에 webapps가 읽어서 실행시킴

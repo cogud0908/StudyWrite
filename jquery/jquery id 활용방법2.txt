@@ -1,0 +1,11 @@
+$(function(){
+$("#second + li").css("color","red");
+$("#second + li + li").css("color","blue");
+});
+
+<ul>
+<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li id="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+</ul>

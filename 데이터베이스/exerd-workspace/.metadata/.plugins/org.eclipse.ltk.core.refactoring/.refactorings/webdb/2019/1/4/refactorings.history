@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="자원 &apos;webdb/bookstore.exerd&apos;을(를) &apos;bookmall.exerd&apos;(으)로 이름 바꾸기" description="&apos;bookstore.exerd&apos; 자원 이름 바꾸기" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="bookstore.exerd" name="bookmall.exerd" stamp="1548031403886" updateReferences="true"/>
+</session>

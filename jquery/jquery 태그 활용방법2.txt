@@ -1,0 +1,7 @@
+// html 만들기
+var htmls = "<li>" + "메세지4" + "</li>";
+		
+// 추가하기
+// $("#gb-list").html(htmls); // 전체삭제후 추가
+$("#gb-list").append(htmls); // 앞에 추가
+$("#gb-list").prepend(htmls); // 뒤에 추가
